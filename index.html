@@ -1,0 +1,26 @@
+<!--リダイレクト -->
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="UTF-8">
+   <title>Redirect - Vue Router</title>
+   <link rel="stylesheet" href="CSS/style.css">
+ </head>
+ <body>
+  <div id="app">
+    <router-link to="/">Home</router-link>
+    <router-link to="/a">A</router-link>
+    <router-link to="/b">B</router-link>
+    <hr>
+    <!-- エイリアス -->
+    <router-link to="/c">C</router-link>
+    <router-link to="/d">D</router-link>
+    <hr>
+    <router-view></router-view>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-router@3.0.6/dist/vue-router.min.js"></script>
+  <script src="js/main.js"></script> 
+ </body>
+</html>
